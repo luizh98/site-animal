@@ -108,5 +108,9 @@ var getJSON = function(url, callback) {
 };
 
 function reload() {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 1);
+
     document.location.reload(true);
 }
